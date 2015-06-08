@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8"/>
+		<title>TITLEHERE</title>
+		<meta name = "description" content = "DESCRIPTIONHERE"/>
+		<!-- link to custom local css -->
+		<link rel="stylesheet" href="style.css">
+		<!-- link to remote google jquery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- link to custom local jquery -->
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id = "wrapper">
+			<table>
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email Address</th>
+						<th>Contact #</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<div id = "form">
+				<form action="process.php" method="post">
+					<p>Add User</p>
+					<label>
+						First Name: <input type="text" name="first_name" class="first">
+					</label>
+					<label>
+						Last Name: <input type="text" name="last_name" class="last">
+					</label>
+					<label>
+						Email Address: <input type="text" name="email_address" class="email">
+					</label>
+					<label>
+						Contact No.: <input type="text" name="contact_no" class="contact">
+					</label>
+					<label>
+						<input type="submit" class="submit" value="Add User">
+					</label>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
